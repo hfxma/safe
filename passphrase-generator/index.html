@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Passphrase Generator</title>
+</head>
+<body>
+    <h1>Passphrase generator</h1>
+    <textarea type="text" id="int" placeholder="your fav sentence"></textarea><br><br>
+    <input type="password" id="key" placeholder="🔑"/>
+    <input type="number" id="ind" min="1" placeholder="🔢"/>&emsp;
+    <input type="button" onclick="trans()" value="🧱 build"/><br><br>
+    <h3>DiceWare passphrase: <input type="button" value="🔓" id="finalBtn"/></h3>
+    <p id="final"></p><hr>
+    <h3>calculated chars: <input type="button" id="calCharBtn" value="🔓"/></h3>
+    <p id="calChar"></p>
+    <h3>numbers: <input type="button" value="🔓" id="numBtn"/></h3>
+    <p id="num"></p>
+    <h3>DiceWare index: <input type="button" value="🔓" id="DWIBtn"/></h3>
+    <p id="DWI"></p> 
+    <script src="calc.js"></script>
+    <script src="click.js"></script>
+</body>
+</html>
